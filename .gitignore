@@ -1,0 +1,5 @@
+aspnet-core/src/Erpinfo.Web.Host/App_Data/Logs/Logs.txt
+vue/package-lock.json
+vue/package.json
+node_modules
+/aspnet-core/src/Erpinfo.Web.Host/wwwroot/Image

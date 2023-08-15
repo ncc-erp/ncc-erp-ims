@@ -1,0 +1,11 @@
+@mixin textAlign($property) {
+   text-align: $property; 
+}
+
+@mixin float($property) {
+    float: $property;
+}
+
+@mixin display($property) {
+    display: $property;
+}

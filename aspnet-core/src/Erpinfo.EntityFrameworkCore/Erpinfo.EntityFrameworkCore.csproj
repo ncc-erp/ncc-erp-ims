@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <RootNamespace>Erpinfo</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20180726102624_Upgrade_ABP_380.cs" />
+    <Compile Remove="Migrations\20180927062408_test.cs" />
+    <Compile Remove="Migrations\20190111071724_Upgraded_To_Abp_v4_1_0.cs" />
+    <Compile Remove="Migrations\20200708030429_EntityGroup20200708.cs" />
+    <Compile Remove="Migrations\20200708030429_EntityGroup20200708.Designer.cs" />
+    <Compile Remove="Migrations\20200708030904_08072020.cs" />
+    <Compile Remove="Migrations\20200708030904_08072020.Designer.cs" />
+    <Compile Remove="Migrations\20200708034943_groupId_null.cs" />
+    <Compile Remove="Migrations\20200708034943_groupId_null.Designer.cs" />
+    <Compile Remove="Migrations\20201020061803_add_table_SystemNotifications.cs" />
+    <Compile Remove="Migrations\20201020061803_add_table_SystemNotifications.Designer.cs" />
+    <Compile Remove="Migrations\20210128080806_Add_table_Jobs_table_UserJobs.cs" />
+    <Compile Remove="Migrations\20210128080806_Add_table_Jobs_table_UserJobs.Designer.cs" />
+	<Compile Remove="Migrations\20210428083840_update_Table_Feedback.cs" />
+	<Compile Remove="Migrations\20210428083840_update_Table_Feedback.Designer.cs" />
+	<Compile Remove="Migrations\20210428084330_add_Table_Feedbacks.cs" />
+	<Compile Remove="Migrations\20210428084330_add_Table_Feedbacks.Designer.cs" />
+	<Compile Remove="Migrations\20210428103358_edit_dataType_Table_Feedbacks.cs" />
+	<Compile Remove="Migrations\20210428103358_edit_dataType_Table_Feedbacks.Designer.cs" />
+	<Compile Remove="Migrations\20211101080358_c.cs" />
+	<Compile Remove="Migrations\20211101080358_c.Designer.cs" />
+	<Compile Remove="Migrations\20220517084327_Add_Table_QuickNews.cs" />
+	<Compile Remove="Migrations\20220517084327_Add_Table_QuickNews.Designer.cs" />
+	
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="5.10.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Erpinfo.Core\Erpinfo.Core.csproj" />
+  </ItemGroup>
+</Project>

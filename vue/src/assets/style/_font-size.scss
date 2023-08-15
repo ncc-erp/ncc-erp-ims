@@ -1,0 +1,7 @@
+$class-font-size: fs;
+
+@for $i from 10 through 30 {
+    .#{$class-font-size}-#{$i} {
+        font-size: #{$i*.077}rem !important;
+    }
+}

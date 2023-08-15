@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Erpinfo.Application</AssemblyName>
+    <PackageId>Erpinfo.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Erpinfo</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.AutoMapper" Version="5.10.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="DevExpress.Xpo" Version="19.2.4" />
+    <PackageReference Include="EPPlus" Version="5.5.4" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.49.0.2161" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Erpinfo.Core\Erpinfo.Core.csproj" />
+    <ProjectReference Include="..\Erpinfo.EntityFrameworkCore\Erpinfo.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>
